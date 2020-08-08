@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var num = prompt('请输入班级人数'), //班级人数
+            sum = 0, //分数
+            average = 0; //平均分
+        for (i = 1; i <= num; i++) {
+            var score = prompt(`请输入第${i}个人的成绩`); //输入每个人的分数
+            sum = sum + parseFloat(score); //计算出班级总分
+        }
+        average = sum / num; //计算出班级平均分
+        alert(`班级总分数为${sum}`);
+        alert(`班级的平均分数为${average}`)
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        var money = 100;
+        do {
+            var operation = prompt('请输入您要的操作:\n1.存钱\n2.取钱\n3.显示余额\n4.退出')
+            switch (operation) {
+                case '1':
+                    money += parseFloat(prompt("请输入你要存的钱"));
+                    break;
+                case '':
+                    m = parseFloat(prompt("请输入你要取的钱数"));
+                    if (m > money) {
+                        alert('您的余额不足');
+                    } else {
+                        money -= m;
+                    }
+                    break;
+                case '3':
+                    alert('您的余额为：' + money);
+                    break;
+                case '4':
+                    alert('欢迎下次再来')
+                default:
+                    alert('你的输入不合法')
+            }
+        } while (operation != 4)
+    </script>
+</body>
+
+</html>

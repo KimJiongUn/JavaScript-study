@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var num = 1;
+        // while (num <= 100) {
+        //     var str = prompt('请输入一二三')
+        //     if (str == '一二三') {
+        //         num = 101 //                 当输入一二三时，num=101，大于100，即结束while循环
+        //     } else {
+        //         num = 1; //                 当输入的字符串不是一二三时，num=1，即再次触发while循环
+        //     }
+        // }
+        var message = prompt('请输入一二三');
+        while (message !== '一二三') {
+            message = prompt('请输入一二三');
+        }
+        alert('三四五')
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

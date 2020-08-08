@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin-left: 30px;
+        }
+    </style>
+    <script>
+        /* window.onload = function () {
+            var oL = document.getElementsByTagName('div');
+            oL[0].style.background = 'red';
+            oL[1].style.background = 'red';
+            oL[2].style.background = 'red';
+            oL[3].style.background = 'red';
+        } */
+        window.onload = function () {
+            var oL = document.getElementsByTagName('div');
+            for (i = 0; i < oL.length; i++) {
+                oL[i].style.background = 'red';
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+</body>
+
+</html>

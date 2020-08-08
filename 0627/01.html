@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            background-color: #ccc;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oL = document.getElementById('but1')
+            oL.onclick = function () {
+                var oDiv = document.getElementById('div1')
+                if (oDiv.style.display == 'none') {
+                    oDiv.style.display = 'block';
+                } else {
+                    oDiv.style.display = 'none';
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="隐藏/显示" id="but1">
+    <div id="div1"></div>
+
+</body>
+
+</html>

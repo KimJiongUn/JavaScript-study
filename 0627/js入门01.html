@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 100px;
+            background-color: #ccc;
+            border: 1px solid red;
+            display:none;
+        }
+    </style>
+    <script>
+        function show() {
+            document.getElementById('div1').style.display="block";
+        }
+        function hide() {
+            document.getElementById('div1').style.display="none"
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox" onmouseover="show()" onmouseout="hide()">
+    <div id="div1">为了你的信息安全。。。。</div>
+</body>
+</html>

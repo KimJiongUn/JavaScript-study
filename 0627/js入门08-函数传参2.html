@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            border-radius: 0%;
+
+        }
+    </style>
+    <script>
+        function Set(name, value) {
+            var oL = document.getElementById('div1')
+            oL.style[name] = value
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="变宽" onclick="Set('width','400px')">
+    <input type="button" value="变高" onclick="Set('height','400px')">
+    <input type="button" value="变绿" onclick="Set('background-color','green')">
+    <input type="button" value="变圆" onclick="Set('border-radius','50%')">
+    <div id="div1"></div>
+</body>
+
+</html>

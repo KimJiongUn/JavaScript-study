@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 200px;
+            background-color: skyblue;
+            display:none;
+        }
+    </style>
+    <script>
+        function showHide() {
+            var oL=document.getElementById('div1')
+            if(oL.style.display=='none')
+            {
+             oL.style.display='block'
+            }
+            else {
+                oL.style.display="none"
+            }
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="隐藏/显示" onclick="showHide()">
+    <div id="div1"></div>
+</body>
+</html>

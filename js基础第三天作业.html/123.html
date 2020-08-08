@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        for (balance = 100; balance < Infinity;) {
+            var operation = prompt('请输入您需要的操作：\n1.存钱\n2.取钱\n3.显示余额\n4.退出')
+            if (operation == '1') {
+                var deposit = prompt('请输入您想存入的金额：')
+                if (isNaN(deposit) || deposit.length == 0 || deposit < 0) {
+                    alert('请您输入正确的金额')
+                } else {
+                    balance = parseFloat(balance) + parseFloat(deposit);
+                    alert(`存款成功！您当前的余额为：${balance}`)
+                }
+            }
+            if (operation == '2') {
+                var take = prompt('请输入您想取出的金额：')
+                if (isNaN(take) || take.length == 0 || take < 0) {
+                    alert('请输入正确的金额')
+                } else {
+                    balance = parseFloat(balance) - parseFloat(take);
+                    alert(`取款成功！您当前的余额为：${balance}`)
+                }
+            }
+            if (operation == '3') {
+                alert(`您当前的余额为${balance}`)
+            }
+            if (operation == '4') {
+                alert('感谢您使用本系统');
+                balance = Infinity;
+            }
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

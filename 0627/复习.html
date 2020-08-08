@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div1 .action {
+            background-color: yellow;
+        }
+
+        #div1 div {
+            width: 200px;
+            height: 200px;
+            border: 1px solid red;
+            display: none;
+        }
+
+        .diva {
+            background-color: orange;
+        }
+
+        .divb {
+            background-color: skyblue;
+        }
+
+        .divc {
+            background-color: blue;
+        }
+
+        .divd {
+            background-color: green;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var aDiv = document.getElementById('div1')
+            var ol = aDiv.getElementsByTagName('input')
+            var fk = aDiv.getElementsByTagName('div')
+            for (i = 0; i < ol.length; i++) {
+                ol[i].index = i;
+                ol[i].onclick = function () {
+                    for (i = 0; i < ol.length; i++) {
+                        ol[i].className = '';
+                        fk[i].style.display = 'none'
+                    }
+                    this.className = 'action';
+                    fk[this.index].style.display = 'block'
+                }
+            }
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="div1">
+        <input type="button" value="教育">
+        <input type="button" value="培训">
+        <input type="button" value="招生">
+        <input type="button" value="出国">
+        <div class="diva" style="display: block;">11111</div>
+        <div class="divb">22222</div>
+        <div class="divc">33333</div>
+        <div class="divd">44444</div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        window.onload = function () {
+            var oL = document.getElementsByTagName('input')
+            for (i = 0; i < oL.length; i++) {
+                ol[i].index = i;
+                ol[i].onclick = function () {
+                    alert(this.index)
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="按钮测试">
+    <input type="button" value="按钮测试">
+    <input type="button" value="按钮测试">
+    <input type="button" value="按钮测试">
+</body>
+
+</html>
