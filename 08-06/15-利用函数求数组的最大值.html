@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // rturn 中止函数，return后面的函数不会被执行
+        function getMax(arr) {
+            var max = arr[0];
+            for (i = 1; i <= arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i]
+                }
+            }
+            return max
+        }
+        var re = getMax([1, 5, 7, 9, 35, 68, 10, 5]);
+        console.log(re);
+
+        //return  只会返回一个值,返回的是最后一个值
+        function add(num1, num2) {
+            return num1, num2
+        }
+        console.log(add(1, 2));
+
+        //如果需要返回多个值，可以用数组表示
+        function ab(numa, numb) {
+            return [numa + numb, numa - numb, numa * numb, numa / numb]
+        }
+        var ra = ab(1, 2);
+        console.log(ra);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

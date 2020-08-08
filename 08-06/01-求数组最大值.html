@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr1 = [2, 5, 0, 77, 88, 99, 33, 55],   // 列出数组
+            max = 2;//                             将数组中的第一个数值赋值给max
+        for (i = 1; i < arr1.length; i++) {
+            if (arr1[i] > max) {//                      将数组中的所有的数依次与max内的值对比
+                max = arr1[i]//                         当与max对比的值大于max时，将较大的值赋值给max
+            }
+        }
+        console.log(max);    //                        输出最大值max
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
