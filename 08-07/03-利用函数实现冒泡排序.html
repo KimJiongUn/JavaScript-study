@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+    <script>
+        //1、比较相邻的两个元素，如果前一个比后一个大，则交换位置。
+        //2、比较完第一轮的时候，最后一个元素是最大的元素。
+        //3、这时候最后一个元素是最大的，所以最后一个元素就不需要参与比较大小。
+        function sort(arr) {
+            for (i = 0; i < arr.length - 1; i++) {
+                for (j = 0; j < arr.length - i - 1; j++) {
+                    if (arr[j] > arr[j + 1]) {
+                        var temp = arr[j];
+                        arr[j] = arr[j + 1];
+                        arr[j + 1] = temp;
+                    }
+                }
+            }
+            return arr
+        }
+        var arr1 = sort([5, 7, 6, 1, 3, 2, 4])
+        console.log(arr1);
+    </script>
+</body>
+
+</html>

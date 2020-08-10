@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        function fn() {
+            for (i = 0; i < Infinity;) {
+                var operation = prompt('欢迎使用简易计算器：\n1.加法运算：\n2.减法运算：\n3.乘法运算：\n4.除法运算：\n5.退出\n请输入您的选项')
+                if (operation == '1') {
+                    add1 = prompt('请输入第一个值');
+                    add2 = prompt('请输入第二个值');
+                    add_result = parseFloat(add1) + parseFloat(add2)
+                    alert(`${add1}+${add2}=${add_result}`)
+                }
+                if (operation == '2') {
+                    minus1 = prompt('请输入第一个值');
+                    minus2 = prompt('请输入第二个值');
+                    minus_result = parseFloat(minus1) - parseFloat(minus2)
+                    alert(`${minus1}-${minus2}=${minus_result}`)
+
+                }
+                if (operation == '3') {
+                    by1 = prompt('请输入第一个值');
+                    by2 = prompt('请输入第二个值');
+                    by_result = parseFloat(by1) * parseFloat(by2)
+                    alert(`${by1} x ${by2}=${by_result}`)
+                }
+                if (operation == '4') {
+                    divide1 = prompt('请输入第一个值');
+                    divide2 = prompt('请输入第二个值');
+                    divide_result = parseFloat(divide1) / parseFloat(divide2)
+                    alert(`${divide1} ÷ ${divide2}=${divide_result}`)
+                }
+                if (operation == '5') {
+                    alert('感谢使用本系统！')
+                    i = Infinity;
+                }
+            }
+        }
+        fn()
+    </script>
+</body>
+
+</html>

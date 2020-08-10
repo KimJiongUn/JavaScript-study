@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var obj = {
+            name: '可可',
+            type: '阿拉斯加',
+            age: '5岁',
+            color: '棕红色',
+            ayyay: [1, 2, 3, 4],
+            skill: function () {
+                console.log('bark,showFilm');
+            }
+        }
+        console.log(obj.name);
+        console.log(obj.type);
+        console.log(obj.age);
+        console.log(obj.color);
+        console.log(obj.ayyay[1]);
+        console.log(obj.ayyay[2]);
+        obj.skill()
+        var ayyay = obj.ayyay;
+        console.log(ayyay[2]);
+    </script>
+
+</body>
+
+</html>

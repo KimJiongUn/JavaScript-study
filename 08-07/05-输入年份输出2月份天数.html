@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        function backDay() {
+            var month = prompt('请输入年份')
+            if (isRun(month)) {
+                alert('今年是闰年，2月份有29天')
+            } else {
+                alert('今年是平年，2月份有28天')
+            }
+        }
+        backDay()
+
+ 
+
+        function isRun(year) {
+            var flag = false;
+            if (year % 4 == 0 && year % 100 != 0 || year % 400 == 0) {
+                flag = true;
+            }
+            return flag
+        }
+    </script>
+
+
+</body>
+
+</html>

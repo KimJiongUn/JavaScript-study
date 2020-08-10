@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //返回数组中的最大值
+        function getMax() {
+            var arrnew = [];
+            var num = prompt('您想对比几个数字的最大值？')
+            var obj = new Object();
+
+            function getArr() {
+                for (i = 0; i < num; i++) {
+                    arrnew[arrnew.length] = prompt(`请您输入第${i+1}个数字`)
+                }
+                obj.outnum = num;
+                obj.outarr = arrnew;
+                return obj
+            }
+            getArr()
+            var max = obj.outarr[0];
+            for (j = 1; j < obj.outarr.length; j++) {
+                if (obj.outarr[j] > parseFloat(max)) {
+                    max = obj.outarr[j]
+                }
+            }
+            obj.outmax = max;
+            return obj
+            //alert(`您输入的${num}个值中，最大的值为：${max}`);
+        }
+        // alert(`您输入的${num}个值中，最大的值为：`+ getMax())
+        // alert('您输入的' + num + '个值中，最大的值为：' + getMax())
+        var obj = getMax();
+        alert(`您输入的${obj.outnum}个值中，最大的值为：${obj.outmax}`)
+    </script>
+</body>
+
+</html>

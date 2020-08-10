@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+        //   一.
+        console.log(num);
+        var num = 10; //   输出结果为undefined
+        //预解析：
+        //  var num;//声明但未赋值；
+        //  console.log(num);//结果为undefined的原因
+        //  num = 10;//最后将10赋值给num
+
+
+
+        //   二.
+        fun()
+        var fun = function () {
+            console.log(123);
+        }
+        //预解析：
+        // var fun;
+        // fun();
+        // fun = function(){
+        //     console.log(123);
+        // }
+    </script>
+</body>
+
+</html>
