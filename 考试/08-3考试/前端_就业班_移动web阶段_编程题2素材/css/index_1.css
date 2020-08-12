@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input[type="button"]:hover {
+    cursor: pointer;
+}
+
+@media screen and (max-width: 320px) {
+    html {
+        font-size: 32px !important;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 75px !important;
+    }
+}
+
+ul {
+    width: 10rem;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+
+
+body {
+    min-width: 320px;
+    max-width: 750px;
+    width: 15rem;
+    margin: 0 auto;
+    font-family: Arial, Helvetica;
+    background-color: white;
+}
+
+.main {
+    min-width: 320px;
+    max-width: 750px;
+    height: 17.746667rem;
+    width: 10rem;
+    overflow: hidden;
+    background: -webkit-linear-gradient(left top, #6ccab7, #3979ca);
+}
+
+.welcome {
+    margin: 0 auto;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #ffffff;
+    margin-left: 2.133333rem;
+    margin-top: 4.666667rem;
+    text-shadow: .026667rem .026667rem .026667rem rgba(0, 0, 0, .4);
+}
+
+.username,
+.password {
+    outline: none;
+    border: 1px solid white;
+    background-color: transparent;
+    width: 7.36rem;
+    height: 1.226667rem;
+    color: white;
+    padding-left: .4rem;
+    font-size: .4rem;
+    border-radius: 1.226667rem;
+    margin-left: 1.333333rem;
+    margin-top: 1.333333rem;
+}
+
+.main .password {
+
+    margin-top: .466667rem;
+}
+
+input::-webkit-input-placeholder {
+    color: white;
+}
+
+.login {
+    outline: none;
+    border: 0;
+    width: 7.36rem;
+    height: 1.226667rem;
+    color: white;
+    font-size: .4rem;
+    border-radius: 1.226667rem;
+    margin-left: 1.333333rem;
+    margin-top: .48rem;
+    background: -webkit-linear-gradient(left top, #56b3f5, #56b3f5);
+}
+
+.bottom {
+    width: 10rem;
+    text-align: center;
+}
+
+.forget {
+    display: inline-block;
+    margin-top: .293333rem;
+    color: white;
+    font-size: .32rem;
+}

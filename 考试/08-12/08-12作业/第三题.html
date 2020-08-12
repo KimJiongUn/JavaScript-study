@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+
+</body>
+<script>
+    //     知识点：字符串转数组 字符串大小写转换 数组的拼接 函数封装
+    // 现有一个字符串：
+    // var str = 'i lOVE you'
+    // 封装一个函数convert(str)，调用函数并传递一个字符串str，返回一个首字母变成大写，其余为小写的一个新字符串。
+    // 例如：
+    // var str = 'i lOVE you';
+    // var newStr = convert(str);
+    // newStr 为：'I Love You'
+
+    //========================================================================================================================
+
+
+    function convert(str) {
+        str = str.toLowerCase();
+        var arr = str.split(' ');
+        newarr = []
+        for (i = 0; i < arr.length; i++) {
+            arr[i] = arr[i][0].toUpperCase() + arr[i].slice(1, arr[i].length);;
+            newarr.push(arr[i])
+        }
+        return newarr.join(' ')
+    }
+    var str = 'i love you';
+    console.log(convert(str));
+</script>
+
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+
+<script>
+    //实现数组收尾交换
+    var arr = ['可口可乐', '方便面', '豆腐脑', '烧烤', '冒菜', '火锅'];
+    var first = arr[0]
+    arr.splice(0, 1, arr[arr.length - 1]);
+    arr.splice(arr.length - 1, 1, first);
+    console.log(arr);
+</script>
+
+</html>

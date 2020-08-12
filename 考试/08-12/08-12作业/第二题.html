@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //     知识点： 函数封装  数组的遍历 数组的追加 
+    //     现有以下数组：
+    //     var arr = ['可口可乐','方便面','豆腐脑','烧烤','冒菜','火锅'];
+    //     封装一个函数getFoods(n)，使整个函数调用后能够返回n个长度随机的内容的数组。
+    //  例如：
+    //  	getFoods(4);
+    // 返回 ['烧烤', '火锅', '方便面', '冒菜']
+
+    //==========================================================================================================
+
+
+
+
+    var arr = ['可口可乐', '方便面', '豆腐脑', '烧烤', '冒菜', '火锅'];
+
+    function getFoods(num) {
+        arrnew = [];
+        while (arrnew.length !== num) {
+            a = Math.floor(Math.random() * ((arr.length - 1) - 0 + 1) + 0)
+            if (arrnew.indexOf(arr[a]) == -1) {
+                arrnew.push(arr[a])
+            }
+        }
+        return arrnew
+
+    }
+    console.log(getFoods(4));
+</script>
+
+</html>
